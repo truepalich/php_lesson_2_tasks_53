@@ -38,9 +38,14 @@ if ($x % 2 == 0) {
 $y1 = 5;
 $y2 = 7;
 
-define('Y3', $y1);
-$y1 = $y2;
-$y2 = Y3;
+//define('Y3', $y1);
+//$y1 = $y2;
+//$y2 = Y3;
+
+$y1=$y1+$y2;
+$y2=$y1-$y2;
+$y1=$y1-$y2;
+
 
 //Task 44
 $l1 = 1;
@@ -133,6 +138,8 @@ String: <?=$num12345?>
 <h2>Task 36</h2>
 <p>
     1) false && true || false && true || !false && true =  false || false || true = 0 + 0 + 1 = 1 = true;
+    <br/>
+    <? var_dump(false && true || false && true || !false && true)?>
     <br/>
     2) <?=$result36?>
 </p>
